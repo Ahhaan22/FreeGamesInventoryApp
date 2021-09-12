@@ -47,7 +47,8 @@ passport.serializeUser(user.serializeUser());
 passport.deserializeUser(user.deserializeUser());
 
 //mongoose connection
-mongoose.connect(process.env.DB_URL, { useNewUrlParser: true,useUnifiedTopology: true});
+const db_url=process.env.DB_URL||"localhost:27017/gameApp";
+mongoose.connect(db_url, { useNewUrlParser: true,useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
@@ -75,6 +76,6 @@ app.use((err,req,res,next)=>{
 	res.status(422).render("error.ejs",{message});
 })
 const port=process.env.PORT || 3000;
-app.listen('3000',()=>{
+app.listen(port,()=>{
 	console.log('listening on port 3000');
 });
