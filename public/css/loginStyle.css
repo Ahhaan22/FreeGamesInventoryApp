@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+html, body{
+	display: flex;
+	flex-direction: column;
+	background-color: #424242;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+.form-label{
+	color: white;
+	font-size: 20;
+	font-family: 'Comfortaa', cursive;
+}
+.form-control{
+	background-color: #424242;
+	color: black;
+	border-width: 1px;
+	width:600px;
+	border-color: black;
+}
+.submit-button{
+	padding: 10px;
+	border-width: 0px;
+	background-color: #03DAC6;
+	color: white;
+	border-radius: 8px;
+	position: relative;
+	left: 48%;
+}
+.login-app{
+	width:40%;
+	margin:0 auto;
+	position: relative;
+	top:100px;
+}
+@media only screen and (max-width: 1200px){
+	.form-control{
+		width:250px;
+	}
+}

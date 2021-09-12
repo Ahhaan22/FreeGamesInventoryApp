@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: #424242;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.box{
+	width: 350px;
+	height: 450px;
+	border-radius: 10px;
+	background-color: #212121;
+}
+img{
+	width: 350px;
+	height: 80%;
+}
+.card{
+	margin-right: 30px;
+	margin-top: 20px;
+}
+.console{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 50px;
+}
+.card:hover{
+	box-shadow: 2px 2px 10px #FFF59D;/*4A6572*/
+}
+.card button{
+	width: 25%;
+	display: inline;
+}
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+.modal-bookmark{
+	width:100%;
+	height: 70%;
+	overflow: hidden;
+}
+.modal-content{
+	background-color: #212121;
+	color:white;
+	margin:10% auto;
+	width:80%;
+}
+.content{
+	width: 100%;
+	z-index: 0;
+	margin-bottom: 10px;
+}
+.close-div{
+	position: relative;
+}
+.close-button{
+	background-color: transparent;
+	border-width: 0px;
+	color: white;
+	width: 30px;
+	float: left;
+	display: inline;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	right: 1%;
+}
+.modal-image{
+	width:30%;
+	height: 300px;
+}
+.Bookmark{
+	border-width: 2px;
+	border-color: red;
+	background-color: #fe4141;
+	color: #212121;
+	border-width: 0;
+	width: 90px;
+	height: 40px;
+	border-radius: 20px;
+	margin:0 auto;
+}
+.close{
+	float: right;
+	font-size: 20px;
+}
+#myChart{
+  width:900px !important;
+  height:500px !important;
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+#MyPieChart{
+	width: 300px !important;
+	height: 300px !important;
+	z-index: 0;
+	position: relative;
+	left:700px;
+	bottom: 100px;
+}
+.category-btn{
+	border-width: 0px;
+	border-radius: 10px;
+	margin-right: 30px;
+}
+#Numbers{
+	width: 200px;
+	height: 200px;
+	background-color: #242424;
+	opacity: 0.5;
+	border-radius: 20px;
+	position: relative;
+	top:120px;
+	left:250px;
+}
+#Numbers h2{
+	position: absolute;
+	top:40%;
+	left:6%;
+}
+.product-image{
+	height: 200px;
+	width: 200px;
+	margin-bottom: 15px;
+	border-radius: 6px;
+}
+#publisher,#developer,#freetogame_profile_url{
+	width: 70%;
+}
+#footer-list{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	padding: 5px;
+	font-family: 'Tourney', cursive;
+	width: 100%;
+}
+#footer-list>*{
+	padding-left:200px;
+}
+#contacts>h2{
+	margin-top:20px;
+	color: #FF7597;
+}
+#github-icon{
+	position: relative;
+	top:-9px;
+}
+#footer-nav{
+	margin-top:10px;
+}
+.footer-nav-list{
+	list-style: none;
+	display: inline-block;
+}
+.footer-nav-list >*{
+	display: inline;
+	margin: 0 10px;
+}
+.footer-nav-link{
+	color: #FFEA00;
+}
+#nav-footer-heading{
+	width: 100%;
+	text-align: center;
+}
+#footer-list >*{
+	margin-left: 10px;
+}
+#icon-1{
+	height: 100px;
+	width: 130px;
+}
+#icon-2{
+	height: 100px;
+	width: 130px;
+	margin-left: 20px;
+}
+form div{
+	margin-bottom: 10px;
+}
+form{
+	margin-bottom: 20px;
+}
+@media only screen and (max-width: 1200px){
+	#myChart{
+  		width:400px !important;
+  		height:300px !important;
+  		margin-left: 50px;
+  		margin-top: 50px;
+  		margin-bottom: 40px;
+	}
+	#Numbers{
+		position: relative;
+		top:120px;
+		left:50px;
+	}
+	#MyPieChart{
+		width: 200px !important;
+		height: 200px !important;
+		position: relative;
+		left:300px;
+		bottom: 100px;
+	}
+	.category-btn{
+		border-width: 0px;
+		border-radius: 10px;
+		margin-right: 10px;
+	}
+	.modal-image{
+		/*width:407px;*/
+		width: 100%;
+		height: 300px;
+	}
+	.game-content{
+		margin-left: 5px;
+		font-weight: lighter;
+	}
+	.game-content span{
+		font-weight: bold;
+	}
+	.close-button{
+		color: black;
+	}
+	#MyPieChart{
+		position: relative;
+		left:260px;
+		bottom: 100px;
+	}
+	#contacts{
+		padding-left: 0px;
+	}
+	#footer-nav{
+		padding-left: 0px;
+	}
+}

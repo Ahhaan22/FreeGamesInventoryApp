@@ -1,0 +1,65 @@
+<%layout('layout/boilerplate')%>
+<h1 style="font-family: 'Tourney', cursive; margin:0 auto; color:#03DAC5;">Add a new free game</h1>
+<div class="container">
+<form method="POST" action="/products/<%=data._id%>?_method=PUT" class="needs-validation" enctype="multipart/form-data" novalidate>
+	<div class="mt-2">
+		<label for="title" style="color: white;" class="form-label">Title</label><input type="text" name="title" class="form-control" required style="color:black;background-color: #424242;border-width: 1px;border-color: black;" value="<%=data.title%>">
+		<div class="valid-feedback">Looks good!</div>
+		<div id="validationServerUsernameFeedback" class="invalid-feedback">Invalid</div>
+	</div>
+	<div>
+		<label for="short_description" style="color: white;" class="form-label">Short Description</label><br><textarea name="short_description" rows="4" cols="50" class="form-control" required style="color:black;background-color: #424242;border-width: 1px;border-color: black;"><%=data.short_description%></textarea>
+		<div class="valid-feedback">Looks good!</div>
+		<div id="validationServerUsernameFeedback" class="invalid-feedback">Invalid</div>
+	</div>
+	<div>
+		<label for="game_url" style="color: white;" class="form-label">Game Url</label><br><input type="text" name="game_url" class="form-control" required style="color:black;background-color: #424242;border-width: 1px;border-color: black;" value="<%=data.game_url%>">
+		<div class="valid-feedback">Looks good!</div>
+		<div id="validationServerUsernameFeedback" class="invalid-feedback">Invalid</div>
+	</div>
+	<div>
+		<label for="genre" style="color: white;" class="form-label">Genre</label>
+		<select name="genre" class="form-select" required style="color:black;background-color: #424242;border-width: 1px;border-color: black;" value="<%=data.genre%>">
+			<option name="shooter" value="Shooter">Shooter</option>
+			<option name="strategy" value="Strategy">Strategy</option>
+			<option name="mmorpg" value="MMORPG">MMORPG</option>
+			<option name="fighting" value="Fighting">Fighting</option>
+			<option name="sports" value="Sports">Sports</option>
+			<option name="card" value="Card">Card</option>
+		</select>
+		<div class="valid-feedback">Looks good!</div>
+		<div id="validationServerUsernameFeedback" class="invalid-feedback">Invalid</div>
+	</div>
+	<div>
+		<label for="platform" style="color: white;" class="form-label">Platform</label>
+		<select name="platform" class="form-select" required style="color:black;background-color: #424242;border-width: 1px;border-color: black;" value="data.platform">
+			<option name="PC (Windows)" value="PC (Windows)">PC (Windows)</option>
+			<option name="Web Browser" value="Web Browser">Web Browser</option>
+		</select>
+		<div class="valid-feedback">Looks good!</div>
+		<div id="validationServerUsernameFeedback" class="invalid-feedback">Invalid</div>
+	</div>
+	<div>
+		<label for="publisher" style="color: white;" class="form-label">Publisher</label><br><input type="text" name="publisher" id="publisher" class="form-control" required style="color:black;background-color: #424242;border-width: 1px;border-color: black;" value="<%=data.publisher%>">
+		<div class="valid-feedback">Looks good!</div>
+		<div id="validationServerUsernameFeedback" class="invalid-feedback">Invalid</div>
+	</div>
+	<div>
+		<label for="developer" style="color: white;" class="form-label">Developer</label><br><input type="text" name="developer" id="developer" class="form-control" required style="color:black;background-color: #424242;border-width: 1px;border-color: black;" value="<%=data.developer%>">
+		<div class="valid-feedback">Looks good!</div>
+		<div id="validationServerUsernameFeedback" class="invalid-feedback">Invalid</div>
+	</div>
+	<div>
+		<label for="release_date" style="color: white;" class="form-label">Release Date</label><br><input type="date" name="release_date" class="form-control" required style="color:black;background-color: #424242;border-width: 1px;border-color: black;" value="<%=data.release_date%>">
+		<div class="valid-feedback">Looks good!</div>
+		<div id="validationServerUsernameFeedback" class="invalid-feedback">Invalid</div>
+	</div>
+	<div class="mb-2">
+		<label for="freetogame_profile_url" style="color: white;" class="form-label">Game URL</label><br><input type="text" name="freetogame_profile_url" id="freetogame_profile_url" class="form-control" required style="color:black;background-color: #424242;border-width: 1px;border-color: black;" value="<%=data.freetogame_profile_url%>">
+		<div class="valid-feedback">Looks good!</div>
+		<div id="validationServerUsernameFeedback" class="invalid-feedback">Invalid</div>
+	</div>
+	<button class="btn btn-outline-info" type="submit">Submit</button>
+</form>
+</div>
+<script type="text/javascript" src="/js/productForm.js"></script>
