@@ -33,12 +33,13 @@
               <img src="<%=data[i].thumbnail%>" class="modal-image col-md-4" alt="">
               <div class="game-content col-md-8 d-flex flex-column  justify-content-evenly">
                 <h2 class="card-title" style="margin: 0 auto;"><%=data[i].title%></h2>
-                <h6><span style="color: #fe4141;">Description:</span> <%=data[i].short_description%></h6>
-                <h6><span style="color: #fe4141;">Game URL:</span> <%=data[i].game_url%></h6>
-                <h6><span style="color: #fe4141;">Genre:</span> <%=data[i].genre%></h6>
-                <h6><span style="color: #fe4141;">Publisher:</span> <%=data[i].publisher%></h6>
-                <h6><span style="color: #fe4141;">Developer:</span> <%=data[i].developer%></h6>
-                <h6><span style="color: #fe4141;">Release Date:</span> <%=data[i].release_date%></h6>
+                <h6 class="card_content"><span style="color: #fe4141;">Description:</span> <%=data[i].short_description%></h6>
+                <h6 class="card_content_url"><span style="color: #fe4141;">Game URL:</span> <%=data[i].game_url%></h6>
+                <h6 class="card_content"><span style="color: #fe4141;">Genre:</span> <%=data[i].genre%></h6>
+                <h6 class="card_content"><span style="color: #fe4141;">Publisher:</span> <%=data[i].publisher%></h6>
+                <h6 class="card_content"><span style="color: #fe4141;">Developer:</span> <%=data[i].developer%></h6>
+                <h6 class="card_content"><span style="color: #fe4141;">Release Date:</span> <%=data[i].release_date%></h6>
+                <button class="card_url_button" href="<%=data[i].game_url%>">View</button>
                 <%if(currentUser){%>
                 <div class="d-flex flex-row justify-content-between">
                   <%if(isAdmin(currentUser)){%>
@@ -59,7 +60,7 @@
                     </form>
                     <%}%>
                     <%if(isAdmin(currentUser)){%>
-                    <form class="d-inline" method="GET" action="/products/<%=data[i].id%>/edit">
+                    <form class="d-inline edit-btn" method="GET" action="/products/<%=data[i].id%>/edit">
                       <button class="mb-1" style="background-color: transparent;;border-width: 0px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fe4141" class="bi bi-pencil-fill" viewBox="0 0 16 16">
                           <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
