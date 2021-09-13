@@ -3,7 +3,7 @@ let MyPieChart=document.getElementById("MyPieChart").getContext('2d');
 let GenreData,number,pc,browser;
 //Chart.defaults.global.defaultFontSize=30;
 getCookie(decodeURIComponent(document.cookie));
-set_xLabel_1();
+
 let barChart=new Chart(myChart,{
 	type:'bar',//bar, hor bar, pie,line ,dougnut
 	data:{
@@ -34,19 +34,25 @@ let barChart=new Chart(myChart,{
 										return 12.5;
 									}
 								}
-        	}},grid:{lineWidth:5}},
+        	},color:'white'},grid:{lineWidth:5}},
         	x: {ticks: {font: {size: function(context){
-        							const width=context.chart.width;//context triggers this function whe
-									const height=document.getElementById("myChart").offsetHeight;
+        							const width=context.chart.width;//context triggers this function when
+									console.log(width)
 									if(width>1000){
 										return 21.9;
+									}
+									else if(width<400){
+										return 9;
 									}
 									else{
 										return 11;
 									}
 								}
-							}
-						},color:'white',grid:{lineWidth:5}}
+							},
+							color:'white',
+							weight:"1"
+						},
+						color:'white',grid:{lineWidth:5}}
         },
         plugins: {
             legend: {
@@ -125,13 +131,4 @@ function getCookie (cookie) {
 	pc=PC;
 	const {Shooter,Fighting,MMORPG,Card,Sports,Strategy}=genres;
 	GenreData=[Shooter,Strategy,MMORPG,Fighting,Sports,Card];
-}
-function set_xLabel_1(){
-	const height=document.getElementById("myChart").offsetHeight;
-	if(height==450){
-		return 21.9;
-	}
-	else if(height==200){
-		return 12.5;
-	}
 }
