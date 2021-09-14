@@ -126,7 +126,7 @@ footer{
 }
 @media only screen and (max-width: 800px){
 	nav{
-		padding-bottom: 50px;
+		padding: 50px !important;
 	}
 	.navbar-nav{
 		position: relative;
