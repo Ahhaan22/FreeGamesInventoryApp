@@ -105,7 +105,7 @@ img{
 }
 #myChart{
   width:900px !important;
-  height:500px !important;
+  height:400px !important;
   margin-left: 200px;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -264,11 +264,11 @@ form{
 		padding-left: 0px;
 	}
 	#stats-heading{
-	color: #FF7597;
-	margin-left: 90px;
-	margin-top: 20px;
-	font-family: 'Tourney', cursive;
-	 margin:0 auto;
+		color: #FF7597;
+		margin-left: 90px;
+		margin-top: 20px;
+		font-family: 'Tourney', cursive;
+	 	margin:0 auto;
 	}
 }
 @media only screen and (max-width: 500px){
@@ -326,11 +326,11 @@ form{
 		width: 70px;
 	}
 	#stats-heading{
-	color: #FF7597;
-	position: relative;
-	top:50px;
-	left: 10px;
-	font-family: 'Tourney', cursive;
-	margin:0 auto;
+		color: #FF7597;
+		position: relative;
+		top:50px;
+		left: 10px;
+		font-family: 'Tourney', cursive;
+		margin:0 auto;
 	}
 }
