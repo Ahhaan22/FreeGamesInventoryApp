@@ -130,7 +130,6 @@ footer{
     	position: relative;
     	top: 0px;
     	width: auto;
-    	align-items: flex-end;
     	flex-direction: column;
     	border: 1px solid black;
  	}

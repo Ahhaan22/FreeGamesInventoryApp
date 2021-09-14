@@ -1,12 +1,14 @@
 <%layout('layout/boilerplate')%>
-  <h1 id="stats-heading">Product Stats</h1>
-	<canvas id="myChart"></canvas>
-  <hr>
-  <div id="dashboard-2">
-    <div id="Numbers">
-      <h2 class="pd-r"style="color: #03DAC5; font-size: 30px;">Products: <span id="totalNum"></span></h2>
+  <div id="dashboard">
+    <h1 id="stats-heading">Product Stats</h1>
+	 <canvas id="myChart"></canvas>
+    <hr>
+    <div id="dashboard-2">
+      <div id="Numbers">
+        <h2 class="pd-r"style="color: #03DAC5; font-size: 30px;">Products: <span id="totalNum"></span></h2>
+      </div>
+      <canvas id="MyPieChart"></canvas>
     </div>
-    <canvas id="MyPieChart"></canvas>
   </div>
   <div class="container">
     <button class="category-btn" style="background-color:#BB86FC; color: #424242;"><a href="/products/Shooter" style=" color:inherit;text-decoration: none;"><small>Shooter</small></a></button>
