@@ -3,6 +3,7 @@ const router=express.Router({mergeParams:true});
 const passport=require('passport');
 const user=require('../models/developer');
 const userControllers=require('../controllers/login');
+router.get('/',userControllers.getLogin);
 router.route('/login')
 	.get(userControllers.getLogin)
 	.post(passport.authenticate('local',{failureFlash:true,failureRedirect:'/login'}),userControllers.Login);
