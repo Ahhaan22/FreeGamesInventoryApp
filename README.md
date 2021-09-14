@@ -5,6 +5,6 @@ The app follows a dark mode display.
 Authentication has been implemented in the application using passport.js
 Authorization has been implemented giving full CRUD option only to the admin user.
 Login and Signup options are available in the application, for admin login use username-admin and password-admin.
-Images uploaded on the application are stored on cloudinary.
+Images uploaded on the application are stored on cloudinary by using the multer-storage-cloudinary middleware.
 
 https://desolate-chamber-58212.herokuapp.com/
