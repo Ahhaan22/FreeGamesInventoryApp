@@ -274,9 +274,6 @@ form{
 	}
 }
 @media only screen and (max-width: 500px){
-	nav{
-		background-color: transparent;
-	}
 	footer{
 		display: none;
 	}
@@ -330,8 +327,8 @@ form{
 	#stats-heading{
 	color: #FF7597;
 	position: relative;
-	top:30px;
-	left: 20px;
+	top:50px;
+	left: 10px;
 	font-family: 'Tourney', cursive;
 	margin:0 auto;
 	}
