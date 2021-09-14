@@ -125,9 +125,19 @@ footer{
 	border-width: 0px;
 }
 @media only screen and (max-width: 800px){
-	nav{
-		padding: 50px !important;
-	}
+	nav {
+    	display: none;
+    	position: relative;
+    	top: 0px;
+    	width: auto;
+    	align-items: flex-end;
+    	flex-direction: column;
+    	border: 1px solid black;
+ 	}
+ 	#logo-img{
+ 		width: 30px;
+ 		height: 30px;
+ 	}
 	.navbar-nav{
 		position: relative;
 		left:200px;
