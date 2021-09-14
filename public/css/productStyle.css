@@ -214,7 +214,7 @@ form{
 	font-family: 'Tourney', cursive;
 	 margin:0 auto;
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 800px){
 	#myChart{
   		width:400px !important;
   		height:300px !important;
@@ -274,6 +274,9 @@ form{
 	}
 }
 @media only screen and (max-width: 500px){
+	nav{
+		background-color: transparent;
+	}
 	footer{
 		display: none;
 	}
@@ -319,8 +322,10 @@ form{
 	}
 	.category-btn{
 		border-width: 0px;
-		border-radius: 10px;
+		border-radius: 5px;
 		margin-right: 4px;
+		height: 20px;
+		width: 70px;
 	}
 	#stats-heading{
 	color: #FF7597;
